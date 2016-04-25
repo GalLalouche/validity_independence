@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SoftwareMetrics with Jar-in-Jar Loader">
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+	<!--ANT 1.7 is required                                        -->
+	<target name="create_run_jar">
+		<jar destfile="D:/Dropbox/misc/Code/Java/LRTokenizer.jar">
+			<manifest>
+				<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader" />
+				<attribute name="Rsrc-Main-Class" value="mains.runnable.LZTokenizerJava" />
+				<attribute name="Class-Path" value="." />
+				<attribute name="Rsrc-Class-Path" value="./ jvmr_2.10-1.0.4.jar junit-4.8.2.jar hamcrest-all-1.2.jar colt.jar optimization.jar Blas.jar tcode.jar jfreechart-1.0.10.jar jcommon-1.0.13.jar language-1.6.7.jar event-1.6.5.jar logger-1.6.4.jar interpreter-1.6.8.jar ssj.jar JFlex.jar hamcrest-all-1.3.jar junit.4.10.jar svnkit-1.3.7.jar commons-io-2.4.jar commons-math3-3.0.jar junit-4.8.2.jar org-netbeans-lib-cvsclient.jar sequence-library-1.0.0.jar opencsv-2.4.jar jsc.jar specs2_2.10-1.13.jar scalaz-core_2.10-7.0.0.jar scalaz-concurrent_2.10-7.0.0.jar scalaz-effect_2.10-7.0.0.jar scalaplot-0.1-SNAPSHOT.jar scala-library-2.10.1.jar jfreechart-1.0.13.jar jcommon-1.0.16.jar itextpdf-5.1.2.jar xmlworker-1.1.0.jar scala-arm_2.10-2.0.0-M1.jar json4s-native_2.10-3.2.9.jar json4s-core_2.10-3.2.9.jar json4s-ast_2.10-3.2.9.jar paranamer-2.6.jar scalap-2.10.0.jar scala-compiler-2.10.0.jar commons-io-1.3.2.jar org.eclipse.jdt.core-3.10.0.jar org.eclipse.core.resources-3.7.100.jar org.eclipse.core.expressions-3.4.300.jar org.eclipse.core.runtime-3.7.0.jar org.eclipse.osgi-3.7.1.jar org.eclipse.equinox.common-3.6.0.jar org.eclipse.core.jobs-3.5.100.jar org.eclipse.equinox.registry-3.5.101.jar org.eclipse.equinox.preferences-3.4.1.jar org.eclipse.core.contenttype-3.4.100.jar org.eclipse.equinox.app-1.3.100.jar org.eclipse.core.filesystem-1.3.100.jar org.eclipse.text-3.5.101.jar org.eclipse.core.commands-3.6.0.jar commons-math3-3.5.jar jline-2.13.jar jansi-1.11.jar javaparser-1.0.10.jar org.eclipse.jgit-4.1.1.201511131810-r.jar jsch-0.1.53.jar JavaEWAH-0.7.9.jar httpclient-4.3.6.jar httpcore-4.3.3.jar commons-logging-1.1.3.jar slf4j-api-1.7.2.jar org.eclipse.jdt.annotation-1.1.0.jar jama-1.0.3.jar mockito-all-1.9.5.jar poi-3.10-FINAL.jar commons-codec-1.5.jar itext-2.0.7.jar bcmail-jdk14-138.jar bcprov-jdk14-138.jar poi-ooxml-schemas-3.10-FINAL.jar xmlbeans-2.3.0.jar stax-api-1.0.1.jar poi-ooxml-3.10-FINAL.jar dom4j-1.6.1.jar xml-apis-1.0.b2.jar scalatest_2.10-2.2.1-M3.jar scala-reflect-2.10.4.jar scalacheck_2.10-1.11.4.jar test-interface-1.0.jar graph-core_2.10-1.9.0.jar nscala-time_2.10-1.2.0.jar joda-time-2.3.jar joda-convert-1.2.jar rxjava-scala-0.20.0-RC6.jar rxjava-core-0.20.0-RC6.jar" />
+			</manifest>
+			<zipfileset src="jar-in-jar-loader.zip" />
+			<fileset dir="../../services/trunk/bin" />
+			<fileset dir="../../metrics/target/classes">
+				<include name="alg/*.*" />
+				<include name="mains/runnable/*.*" />
+			</fileset>
+			<fileset dir="../../cli/CLI/bin" />
+			<fileset dir="../../softwareevolution/SoftwareEvolution/bin" />
+			<zipfileset dir="C:\Users\Gal\.m2\repository\org\scala-lang\scala-library\2.10.1" includes="scala-library-2.10.1.jar" />
+		</jar>
+	</target>
+</project>

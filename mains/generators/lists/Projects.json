@@ -1,0 +1,173 @@
+{
+	"atmosphere": {
+		"name": "Atmosphere",
+		"link": "https://github.com/Atmosphere/atmosphere",
+		"desc": "A Realtime Client Server Framework for the JVM, supporting WebSockets and Cross-Browser Fallbacks Support"
+	},
+	"cassandra": {
+		"name": "Cassandra",
+		"link": "https://github.com/apache/cassandra",
+		"desc": "A partitioned row store; it is a fault-tolerant alternative to NoSQL, with an emphasis on performance and scalability"
+	},
+	"CraftBukkit": {
+		"name": "CraftBukkit",
+		"link": "https://github.com/Bukkit/CraftBukkit",
+		"desc": "An implementation of the Bukkit server API; Bukkit is a free, open-source, software project that provides the means to extend the popular Minecraft videogame multiplayer server"
+	},
+	"elasticsearch": {
+		"name": "Elasticsearch",
+		"link": "https://github.com/elasticsearch/elasticsearch",
+		"desc": "A Distributed RESTful Search Engine, built on top of Lucene"
+	},
+	"Essentials": {
+		"name": "Essentials",
+		"link": "https://github.com/essentials/Essentials",
+		"desc": "A server mod for the Minecraft videogame; a plugin for Bukkit"
+	},
+	"guava": {
+		"name": "Guava",
+		"link": "https://code.google.com/p/guava-libraries/",
+		"desc": "The Guava project contains several of Google's core \\Java libraries: collections, caching, primitives support, concurrency libraries, common annotations, string processing, I/O, and so forth"
+	},
+	"guice": {
+		"name": "Guice",
+		"link": "https://code.google.com/p/google-guice/",
+		"desc": "A lightweight dependency injection framework for \\Java 5, by Google"
+	},
+	"hadoop-common": {
+		"name": "Hadoop Common",
+		"link": "https://github.com/apache/hadoop-common",
+		"desc": "The Apache Hadoop project develops open-source software for reliable, scalable, distributed computing; Hadoop Common is the collection of the common utilities that support the other Hadoop modules"
+	},
+	"hbase": {
+		"name": "HBase",
+		"link": "https://github.com/apache/hbase",
+		"desc": "A scalable, distributed database that supports structured data storage for large tables for Apache Hadoop"
+	},
+	"hibernate-orm": {
+		"name": "Hibernate ORM",
+		"link": "https://github.com/hibernate/hibernate-orm",
+		"desc": "An Object Relation Mapping (ORM) framework for \\Java"
+	},
+	"jclouds": {
+		"name": "jclouds",
+		"link": "https://github.com/jclouds/jclouds"
+		"desc": "An open source multi-cloud toolkit for the \\Java for creating applications that are portable across clouds"
+	},
+	"junit": {
+		"name": "JUnit",
+		"link": "https://github.com/junit-team/junit",
+		"desc": "The de-facto framekwork for writing and running unit tests in \\Java"
+	},
+	"k-9": {
+		"name": "K-9 Mail",
+		"link": "https://github.com/k9mail/k-9",
+		"desc": "An advanced email client for Android"
+	},
+	"mongo-java-driver": {
+		"name": "MongoDB Java Driver",
+		"link": "https://github.com/mongodb/mongo-java-driver",
+		"desc": "A \\Java driver for MongoDB, which is an open-source NoSQL database"
+	},
+	"netty": {
+		"name": "Netty",
+		"link": "https://github.com/netty/netty",
+		"desc": "An asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers \& clients"
+	},
+	"OpenRefine": {
+		"name": "OpenRefine",
+		"link": "https://github.com/OpenRefine/OpenRefine",
+		"desc": "A free, open source power tool for working with messy data and improving it"
+	},
+	"org.aspectj": {
+		"name": "AspectJ",
+		"link": "https://github.com/eclipse/org.aspectj",
+		"desc": "A seamless, aspect-oriented extension to the \\Java programming language"
+	},
+	"RxJava": {
+		"name": "RxJava",
+		"link": "https://github.com/Netflix/RxJava",
+		"desc": "A library for composing asynchronous and event-based programs using observable sequences for the JVM; an implementation of Rx Observables"
+	},
+	"spring-framework": {
+		"name": "Spring Framework",
+		"link": "https://github.com/spring-projects/spring-framework",
+		"desc": "The framework provides a comprehensive programming and configuration model for modern \\Java-based enterprise applications"
+	},
+	"Terasology": {
+		"name": "Terasology",
+		"link": "https://github.com/MovingBlocks/Terasology",
+		"desc": "An open source project for procedural terrain generation and efficient rendering techniques in \\Java using the LWJGL"
+	},
+	"titan": {
+		"name": "Titan",
+		"link": "https://github.com/thinkaurelius/titan",
+		"desc": "A highly scalable graph database optimized for storing and querying large graphs with billions of vertices and edges distributed across a multi-machine cluster"
+	},
+	"voldemort": {
+		"name": "Voldemort",
+		"link": "https://github.com/voldemort/voldemort",
+		"desc": "A distributed key-value storage system; it is an open source clone of Amazon's Dynamo"
+	},
+	"wildfly": {
+		"name": "WildFly",
+		"link": "https://github.com/wildfly/wildfly",
+		"desc": "A flexible, lightweight, managed application runtime"
+	},
+	"zxing": {
+		"name": "ZXing (``zebra crossing'')",
+		"link": "https://github.com/wildfly/wildfly",
+		"desc": "An open-source, multi-format 1D/2D barcode image processing library implemented in \\Java"
+	},
+	"hudson": {
+		"name": "Hudson",
+		"link": "https://github.com/kohsuke/hudson",
+		"desc": "An application that monitors executions of repeated jobs, for continuous integration and monitoring executions of externally-run jobs (later renamed to Jenkins)" 
+	},
+	"rhino": {
+		"name": "Rhino",
+		"link": "https://github.com/mozilla/rhino",
+		"desc": "An open-source implementation of JavaScript written entirely in Java. It is typically embedded into Java applications to provide scripting to end users" 
+	},
+	"openmrs-core": {
+		"name": "OpenMRS",
+		"link": "https://github.com/openmrs/openmrs-core",
+		"desc": "A patient-based medical record system focusing on giving providers a free customizable Electronic Medical Record" 
+	},
+	"lombok": {
+		"name": "Lombok",
+		"link": "https://github.com/rzwitserloot/lombok",
+		"desc": "Reduces boilerplate in \\Java by adding 'handlers' that know how to build and compile simple, not-quite-java code" 
+	},
+	"dropwizard": {
+		"name": "Dropwizard",
+		"link": "https://github.com/dropwizard/dropwizard",
+		"desc": "Dropwizard pulls together stable, mature libraries from the \\Java ecosystem into a simple, light-weight package" 
+	},
+	"hector": {
+		"name": "Hector",
+		"link": "https://github.com/hector-client/hector",
+		"desc": "Hector is a high level \\Java client for Apache Cassandra" 
+	},
+	"hazelcast": {
+		"name": "Hazelcast",
+		"link": "https://github.com/hazelcast/hazelcast",
+		"desc": "A clustering and highly scalable data distribution platform for \\Java" 
+	},
+	"jna": {
+		"name": "JNA (\\Java Native Access)",
+		"link": "https://github.com/twall/jna",
+		"desc": "Provides \\Java programs easy access to native shared libraries by writing just \\Java code" 
+	},
+	"docx4j": {
+		"name": "docx4j",
+		"link": "https://github.com/plutext/docx4j",
+		"desc": "A JAXB-based library for creating, editing, and saving OpenXML \"packages\", including docx, pptx, and xslx" 
+	},
+	"cucumber-jvm": {
+		"name": "Cucumber-JVM",
+		"link": "https://github.com/cucumber/cucumber-jvm",
+		"desc": "Cucumber is a tool for running automated tests written in plain language. Originally developed for the Ruby programming language, Cucumber-JVM is a pure \\Java implementation of Cucumber that supports the most popular programming languages for the JVM"
+	},
+	"intentionally left blank for trailing comma": {}
+}

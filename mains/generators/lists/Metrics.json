@@ -1,0 +1,142 @@
+{
+	"ABC3": {
+		"name": "\textbf Alpha\textbf betical \textbf Comment \textbf Character \textbf Count",
+		"desc": "A measure of the amount of source-code comments.
+		Formally, it is the number of alphabetical characters appearing inside comments (i.e., line comments, block comments, and Javadocs).
+	 	This metric therefore ignores punctuation, use of ASCII characters for embellishing comments, and formatting conventions as in Javadocs.
+	 	It is similar to word count except that it gives larger weight to longer words.
+	 	Comments before the package declaration are ignored, as they are usually auto-generated copyright \& license notices."
+	},
+	"BRC": {
+		"name": "\\textbf B\\textbf ranch \\textbf Count",
+		"desc": "The number of control statements (e.g., \\texttt{if}, \\texttt{else}, \\texttt{while}).
+		 This value is always one less than \\MCCS; note, that while the smallest values in \\MCCS is 1, in \\BRC it is 1, and this causes \\BRC to behave differently under different normalizations"
+	},
+	"CBO": {
+		"name": "\\textbf Coupling Between \\textbf Class \\textbf Objects~\\cite{Chidamber:Kemerer:94}.",
+		"desc": "The coupling of a class is the number of other classes used (or referenced) by a class."
+	},
+	"CCC": {
+		"name": "\\textbf Comment \\textbf Characters \\textbf Count",
+		"desc": "A measure of the amount of source-code comments.
+		Formally, it is the number of non-whitespace characters appearing inside comments (i.e., line comments, block comments, and Javadocs).
+		Comments before the package declaration are ignored, as they are usually auto-generated copyright \\& licence notices"
+	},
+	"CHAM": {
+		"name": "\\textbf{Cham}eleonicity",
+		"desc": "The Chameleonicity of a method~\\cite{Gil:Itai:98} is defined as the number of inclusion-polymorphic variables in-scope within the body of that method.
+		The chameleonicity of a class is defined as the maximum of the chameleonicity of its methods.
+		While this value is well-defined and exists, it is complex to calculate.
+		\\footnote{Features such as dynamic loading could render this value impossible to calculate by static code parsing.
+		Instead, we will use an approximation of this metric: The number of polymorphic variables}.
+		\\hilight{Explain why this not a variety of \\WMC.}"
+	},
+	"CON": {
+		"name": "\\textbf{Con}structor Count",
+		"desc": "The number of constructors in the class, not including automatically generated constructors (i.e., no constructors would be counted as~0).
+		 It is possible for classes to inherit classes outside of its holding corpus.
+		 For the sake of our analysis, we treat such \\emph{external} classes as direct descendants of \\texttt{Object}"
+	},
+	"DIT": {
+		"name": "\\textbf Depth of \\textbf Inheri\\textbf tance~\\cite{Chidamber:Kemerer:94}",
+		"desc": "The distance of the class in the polymorphic inheritance tree to the root object (\\texttt{Object} in \\Java)"
+	},
+	"ENT": {
+		"name": "\\textbf{Ent}tropy",
+		"desc": "The information-theory entropy value of the multi-set of tokens of a class."
+	},
+	"ETF": {
+		"name": "\\textbf Euler's \\textbf Totient \\textbf Function",
+		"desc": "The value of Euler's totient function~($\\varphi$), as applied to the sum of all byte values in the code"
+	},
+	"GZIP": {
+		"name": "regularity (\\textbf{GZIP} compression)",
+		"desc": "The number of bytes in the GZip~\\cite{Deutsch:1996} compressed byte-stream of the class's source code.
+		 We use this metric since it was suggested~\\cite{Jbara:Feitelson:14} that code regularity might be more predictive of maintainability than size.
+		 The presumption that compressability is correlated with regularity leads us to examine this metric"
+	},
+	"HOR": {
+		"name": "\\textbf{Hor}izontal complexity",
+		"desc": "For each statement~$s$, let~$c(s)$, the \\emph{control depth} of~$s$ be the number of control structures (such as \\texttt{\\textbf{if}}) that enclose~$s$.
+		Then, the horizontal complexity of the code is~$\\sum\\limits_{s}{c(s)}$"
+	},
+	"LCOM": {
+		"name": "\\textbf Lack of \\textbf C\\textbf ohesion in \\textbf Methods~\\cite{Chidamber:Kemerer:94}",
+		"desc": "The lack of cohesion in a class's methods, is the count of method pairs that do not share instance variables.
+		Formally, let~$M_1,\\ldots,M_n$ be the class's methods, and let~$I_j$ be the set of instance variables used by~$M_j$.
+	 	Let~$$P=\\left\\{\\left(I_i,I_j\\right)|I_i\\cap I_j=\\emptyset\\right\\}$$ and~$$Q=\\left\\{\\left(I_i,I_j\\right)\\right\\}-P.
+		$$ The lack of cohesion of methods is defined as $$\\max\\left\\{\\left|P\\right|-\\left|Q\\right|,0\\right\\}.$$
+	 	This metric is defined using negation (\\emph{lack} of cohesion), so that higher values would signify more complex code"
+	},
+	"LOC": {
+		"name": "\\textbf Lines \\textbf of \\textbf Code",
+		"desc": " The number of lines of code in a software repository, including comments.
+		\\footnote{equivalent to running \\texttt{wc -l} on the source file.}"
+	},
+	"LPC": {
+		"name": "\\textbf Loo\\textbf p \\textbf Count",
+		"desc": "The number of loops (\\texttt{for}, \\texttt{enchanced-for}, \\texttt{do-while}, etc.) in the class"
+	},
+	"LZW": {
+		"name": "regularity (\\textbf Lempel-\\textbf Ziv-\\textbf Welch compression)~\\cite{Ziv:Lempel:1978}",
+		"desc": "The number of compressed tokens after applying the LZW compression algorithm on the stream of tokens of a class.
+		We employ this metric as another candidate for approximating the ``essential'' size of the code, i.e., the code left after repetitions are eliminated"
+	},
+	"MCC": {
+		"name": "\\textbf McCabe \\textbf Cyclomatic \\textbf Complexity~\\cite{McCabe:76}",
+		"desc": "The number of linearly independent paths through the control-flow graph of a program, defined over the connected components of a control-flow graph composed of basic blocks.
+		 	This includes short-circuit evalution logic"
+	},
+	"MCCS": {
+		"name": "\\textbf McCabe \\textbf Cyclomatic \\textbf Complexity (simple)",
+		"desc": "The number of linearly independent paths through the control-flow graph of a program, defined over the connected components of a control-flow graph composed of basic blocks.
+		This does \\emph{not} include short-circuit evaluation"
+	},
+	"MCD": {
+		"name": "\\textbf McCabe \\textbf Cyclomatic Complexity (\\textbf Difference)",
+		"desc": "The difference between the regular and short-circuit McCabe metrics.
+		This is equal to the number of infix boolean operators."
+	},
+	"MNK": {
+		"name": "\\textbf Mo\\textbf n\\textbf key",
+		"desc": "A sanity check metric, it assigns each class a random, uniformly distributed value in~$\\left[0,1\\right]$."
+	},
+	"MTE": {
+		"name": "\\textbf Mu\\textbf tability (\\textbf Explicit)",
+		"desc": "The number of non-final fields in the class, not including inherited fields"
+	},
+	"NIV": {
+		"name": "\\textbf Number of \\textbf Instance \\textbf Variables",
+		"desc": "The number of instance variables (i.e., fields) in the class, not including inherited ones."
+	},
+	"NOC": {
+		"name": "\\textbf Number \\textbf of \\textbf Children~\\cite{Chidamber:Kemerer:94}",
+		"desc": "The number of direct children a class has, i.e., the number of classes that explicitly inherit it"
+	},
+	"NOM": {
+		"name": "\\textbf Number \\textbf of \\textbf Methods",
+		"desc": "The number of methods defined in the class, not including constructors or inherited methods."
+	},
+	"NOS": {
+		"name": "\\textbf Number \\textbf of \\textbf Statements",
+		"desc": "A count of how many statements (other than bracketed blocks) exist in the source code.\\footnote{For the exact definition of a statement, see\\\\ \\tiny{http://help.eclipse.org/indigo/index.jsp?topic=/org.eclipse.jdt.doc.isv/reference/api/org/eclipse/jdt/core/dom/Statement.html}}."
+	},
+	"NOT": {
+		"name": "\\textbf Number \\textbf of \\textbf Tokens",
+		"desc": "Total number of the tokens in the code. We expect this metric to be more robust than \\LOC since it ignores code formatting conventions"
+	},
+	"RFC": {
+		"name": "\\textbf Response \\textbf for a \\textbf Class~\\cite{Chidamber:Kemerer:94}",
+		"desc": "The response set of a method is the set of methods it invokes when invoked (including itself).
+		The response for a class, is the size of the union of the responses of all its methods."
+	},
+	"SHA1": {
+		"name": "SHA-1"
+			"desc": "Another sanity check metric, it return the last 8 bits the SHA-1\\cite{Eastlake:Jones:01} value of the class source code (i.e., modulu 256)"
+	},
+	"WMC": {
+		"name": "\\textbf Weighted \\textbf Methods per \\textbf Class",
+		"desc": "A count of the number of the token that are in methods (e.g., ignoring fields and method signatures)"
+	}
+	"intentionally left blank for trailing comma": {}
+}
